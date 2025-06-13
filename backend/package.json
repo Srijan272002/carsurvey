@@ -6,13 +6,11 @@
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
-    "client": "cd client && npm start",
-    "start-all": "concurrently \"npm run dev\" \"npm run client\"",
     "test": "jest",
     "lint": "eslint src/**/*.js",
     "setup-db": "node scripts/setup-database.js",
-    "build": "cd client && npm install && npm run build",
-    "vercel-build": "cd client && npm install && npm run build"
+    "build": "echo \"No build step required for backend\"",
+    "vercel-build": "echo \"No build step required for backend\""
   },
   "keywords": [
     "voice",
