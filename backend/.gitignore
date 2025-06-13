@@ -1,5 +1,46 @@
-# Node modules
-node_modules/
+# Dependencies
+/node_modules
+/package-lock.json
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# Compiled output
+/dist
+/build
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+.DS_Store
+Thumbs.db
 
 # Build output
 build/
@@ -34,7 +75,6 @@ client/node_modules/
 coverage/
 
 # Misc
-*.log
 *.tgz
 
 # Local env
@@ -76,3 +116,4 @@ out/
 # Misc
 *.bak
 *.tmp 
+.vercel

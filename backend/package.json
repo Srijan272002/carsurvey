@@ -10,8 +10,19 @@
     "start-all": "concurrently \"npm run dev\" \"npm run client\"",
     "test": "jest",
     "lint": "eslint src/**/*.js",
-    "setup-db": "node scripts/setup-database.js"
+    "setup-db": "node scripts/setup-database.js",
+    "build": "cd client && npm install && npm run build",
+    "vercel-build": "cd client && npm install && npm run build"
   },
+  "keywords": [
+    "voice",
+    "ai",
+    "survey",
+    "car",
+    "dealership"
+  ],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "@fontsource/inter": "^5.2.6",
     "@fontsource/merriweather": "^5.2.9",
@@ -29,7 +40,12 @@
     "node-schedule": "^2.1.1",
     "supabase": "^1.50.11",
     "twilio": "^4.9.0",
-    "winston": "^3.8.2"
+    "winston": "^3.8.2",
+    "concurrently": "^8.2.2",
+    "eslint": "^8.46.0",
+    "jest": "^29.6.2",
+    "nodemon": "^3.1.0",
+    "supertest": "^6.3.3"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
